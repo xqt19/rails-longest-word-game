@@ -1,0 +1,22 @@
+<div class="w-100 h-100 p-4">
+<h1 class = "d-flex justify-content-center">Welcome to Countdown!</h1>
+<p class = "d-flex justify-content-center">It's the game you can't put down!</p>
+</div>
+
+<div class = "d-flex justify-content-center">
+<div class="border border-secondary p-3" style="width:70%">
+<h2 class = "d-flex justify-content-center"><u>Results</u></h2>
+<h4 class = "d-flex justify-content-center">Your Answer: <%= @answer.capitalize %></h4>
+<h4 class = "d-flex justify-content-center">Time Taken: <%= @time.round(1) %> seconds </h4>
+<br>
+<h4 class = "d-flex justify-content-center">Score: <%= @score %> </h4>
+<h4 class = "d-flex justify-content-center"><%= @reason %> </h4>
+<br>
+<br>
+<h4 class = "d-flex justify-content-center">Total Score: <%= session[:score] %> </h4>
+</div>
+</div>
+
+
+<br><br>
+<h3 class = "d-flex justify-content-center"><%= link_to 'Play Again!', root_path %></h3>
